@@ -1,0 +1,67 @@
+﻿@model WebApplication1.Models.Staff
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.S_ID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.S_ID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.S_Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.S_Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.S_Birth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.S_Birth)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.S_Gender)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.S_Gender)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.S_Phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.S_Phone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.S_Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.S_Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.S_Pass)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.S_Pass)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.D_ID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.D_ID)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.ID }) |
+    <a asp-action="Index">Back to List</a>
+</div>
